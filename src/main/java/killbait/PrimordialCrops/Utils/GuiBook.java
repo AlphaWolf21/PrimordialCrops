@@ -27,8 +27,11 @@ public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 
 		super.drawScreen(mouseX, mouseY, partialTicks);
 
-			String betaTest = I18n.translateToLocal("Primordial Crops");
-			mc.fontRendererObj.drawStringWithShadow(betaTest, left + xSize / 2 - mc.fontRendererObj.getStringWidth(betaTest) / 2, top - 12, 0xFFFFFF);
+			String finalWorking = I18n.translateToLocal("Primordial Crops");
+			mc.fontRendererObj.drawStringWithShadow(finalWorking, left + xSize / 2 - mc.fontRendererObj.getStringWidth(finalWorking) / 2, top - 12, 0xFFFFFF);
+	
+			String loadGuiText = I18n.translateToLocal("PrimordialCrops.loadGuiText");
+			mc.fontRendererObj.drawStringWithShadow(loadGuiText, left + xSize / 2 - mc.fontRendererObj.getStringWidth(loadGuiText) / 2, top + 133, 0xFFFFFF);
 }
 
 @Override
